@@ -69,10 +69,12 @@ function yo(api_token) {
 
 function onInstall() {
     console.log("Extension Installed");
+    getCredentials();
   }
 
 function onUpdate() {
 	console.log("Extension Updated");
+	getCredentials();
 }
 
 function getCredentials(){
