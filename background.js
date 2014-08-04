@@ -1,20 +1,9 @@
-api_token = '1bff6f7c-a9ca-7a9f-be96-f306f469fe8b';
-
-
-
-
-
-
-
-
 banned = ["https://www.facebook.com", "https://facebook.com",
 		"https://www.youtube.com", "https://youtube.com",
 		"https://www.twitter.com", "https://twitter.com",
 		"https://www.reddit.com", "https://reddit.com", "www.reddit.com", "reddit.com"];
 
 links = ["http://i.imgur.com/7aNla4Q.png", "http://i.imgur.com/FdXfcYX.jpg?1", "http://i.imgur.com/Bl5uPIu.jpg"];
-
-yoname = "NWCHEN";
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 	check();
