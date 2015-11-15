@@ -29,22 +29,6 @@ function isBanned(tablink) {
 	return false;
 }
 
-/*
-function addToList(tablink){
-	var oNewNode = document.createElement("LI");
-    urlList.appendChild(oNewNode);
-    oNewNode.innerText=tablink; 
-}
-*/
-
-/*
-function getLink(){
-	for(int i=0; i<links.length; i++){
-		return links[Math.floor(Math.random() * myArray.length)];
-	}
-}
-*/
-
 function yo(api_token) {
 	xhr = new XMLHttpRequest();
 	params = "api_token=" + api_token + "&username=" + yoname + "&link=" + getLink(); 
@@ -55,7 +39,6 @@ function yo(api_token) {
 }
 
 //***************FIRST TIME RUN***************\\
-
 function onInstall() {
     console.log("Extension Installed");
     getCredentials();
